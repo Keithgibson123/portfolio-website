@@ -23,7 +23,7 @@ body{
     background-position: right center;
     position: relative;
     background-repeat: no-repeat;
-    background-color: #000000;
+    background-color: #f3f1f1;
 }
 header{
     padding:40px 0 30px;
@@ -107,24 +107,24 @@ nav .nav-list li.btn:hover a{
     margin-bottom: 40px;
 }
 .container .hero-text h1{
-    color:rgb(255, 119, 0);
+    color:rgb(0, 0, 0);
     font-size: 47px;
     font-weight: 900;
     line-height: 1.2;
     margin: 20px 0px 20px;
 }
 span{
-    color: #ffffff;
+    color: #f89728;
 }
 .container .hero-text h3{
-    color: #eee;
+    color: rgb(0, 0, 0);
     font-weight: 400;
     font-size: 17px;
 }
 .container .hero-text p {
     width: 440px;
     max-width: 100%;
-    color: #eee;
+    color: rgb(0, 0, 0);
     font-size: 15px;
     line-height: 1.5;
     margin-bottom: 30px;
@@ -137,7 +137,7 @@ span{
     align-items: center;
     justify-content: center;
     font-size: 17px;
-    color: #eee;
+    color: rgb(242, 122, 23);
     cursor: pointer;
     margin-right: 20px;
     background-color: rgba(255, 255, 255, 0.1);
@@ -170,17 +170,43 @@ span{
     padding-bottom: 40px;
 }
 .bottom p{
-    color: #eee;
+    color: rgb(248, 87, 18);
     letter-spacing: 2px;
     font-size: 15px;
 }
 .about-me{
-    padding: 20px;
-
+    padding: 40px;
+    margin: 20px;
+    font-weight: 600;
+    border: #000000 solid 6px;
+    width: 400px;
+    max-width: 100%;
 }
 .my-work{
-    padding: 20px;
+    padding: 35px;
+    color: #f3f1f1;
+    font-weight: 600;
+    border: #000000 solid 6px;
+    background-color: #040404;
 } 
+.flex-container{
+    width:103% ;
+    height: auto;
+    display: flex;
+}
+.flex-box{
+    width: 103%;
+    height:100px ;
+    background:url(../portfolio-website/sam.png);
+    background-size: contain;
+    position: relative;
+    color: #ea8512;
+    font-size: 25px;
+    text-align: center;
+    line-height:100px ;
+    border-radius: 10px;
+    margin: 10px;
+}
 @media screen and (max-width:930px) {
     nav .hamb{
         display: initial;
@@ -206,11 +232,11 @@ span{
     nav .nav-list{
         position: absolute;
         top: 90px;
-        right: 0;
+        right: -65%;
         bottom:0;
         width: 60%;
         height: 50%;
-        background:#000000;
+        background:#ffffff;
         z-index: 2;
         padding: 6% 9%;
         transform: .3s right;
@@ -226,5 +252,16 @@ nav .nav-list li a{
     font-weight: 400;
     margin-left: 0;
     margin-bottom: 40px;
+}
+nav .nav-list li.btn a{
+    position: absolute;
+    bottom: 0%;
+    right: 20%;
+    left: 20%;
+    padding: 7% 15px;
+    font-size: 14px;
+}
+nav .nav-list.open {
+    right: 0%;
 }
 }
